@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Kanime</string>
+    <string name="animeListFragment2">Top Anime</string>
+    <string name="animeSearchFragment2">Search</string>
+    <string name="charectersFragments">Character</string>
+    <string name="animeDetailFragment">Detail</string>
+    <string name="animeFavoriteFragment">Favorite</string>
+</resources>

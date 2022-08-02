@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/animeListFragment2"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:showAsAction="ifRoom"
+        android:title="@string/animeListFragment2" />
+
+    <item
+        android:id="@+id/animeSearchFragment2"
+        android:icon="@drawable/ic_search_foreground"
+        app:showAsAction="ifRoom"
+        android:title="@string/animeSearchFragment2" />
+
+    <item
+        android:id="@+id/animeFavoriteFragment"
+        android:icon="@drawable/ic_not_favorite_foreground"
+        app:showAsAction="ifRoom"
+        android:title="@string/animeFavoriteFragment"/>
+
+
+</menu>

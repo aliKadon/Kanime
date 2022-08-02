@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/animeListFragment2">
+    <fragment
+        android:id="@+id/animeListFragment2"
+        android:name="com.example.animeapp2.ui.fragments.AnimeListFragment"
+        android:label="@string/animeListFragment2"
+        tools:layout="@layout/fragment_anime_list" >
+        <action
+            android:id="@+id/action_animeListFragment2_to_mainActivityDetail2"
+            app:destination="@id/mainActivityDetail2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/animeSearchFragment2"
+        android:name="com.example.animeapp2.ui.fragments.AnimeSearchFragment"
+        android:label="@string/animeSearchFragment2" >
+        <action
+            android:id="@+id/action_animeSearchFragment2_to_mainActivityDetail2"
+            app:destination="@id/mainActivityDetail2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <activity
+        android:id="@+id/mainActivityDetail2"
+        android:name="com.example.animeapp2.ui.MainActivityDetail"
+        android:label="activity_main_detail"
+        tools:layout="@layout/activity_main_detail" >
+        <argument
+            android:name="animeSer"
+            app:argType="com.example.animeapp2.models.Data" />
+    </activity>
+    <fragment
+        android:id="@+id/animeFavoriteFragment"
+        android:name="com.example.animeapp2.ui.fragments.AnimeFavoriteFragment"
+        android:label="@string/animeFavoriteFragment" >
+        <action
+            android:id="@+id/action_animeFavoriteFragment_to_mainActivityDetail2"
+            app:destination="@id/mainActivityDetail2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+</navigation>
